@@ -2,7 +2,7 @@
 ## Table of Contents
 ### <ul><li>About</li><li>Technologies Used</li><li>Screenshots</li></ul>
 ## About 
-### Developed a simple website where payment gateway is integrated. There is a simple donate button on homepage, on clicking the donate button, the user will land on the payment page where user can select the amount to be paid and the payment type that includes Credit Card, Netbanking, UPI and Debit Card. On successful payment an invoice will be …  
+### Developed a simple website where payment gateway is integrated. There is a simple donate button on homepage, <br>on clicking the donate button, the user will land on the payment page where user can select the amount to be paid and the payment type that includes Credit Card, Netbanking, UPI and Debit Card. On successful payment an invoice will be generated and email will be sent to user. 
 ## Technologies used 
 ### Frontend:<br> <ul><li>Html</li><li>Css</li><li>Javascript</li></ul>
 ### Backend: Python-Flask Framework 
