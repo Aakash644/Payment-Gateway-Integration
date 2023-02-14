@@ -11,7 +11,7 @@ app=Flask(__name__,template_folder="templates",static_folder="static")
 
 @app.route('/')
 def home():
-    return render_template("index1.html")
+    return render_template("index.html")
 
 @app.route('/form',methods=['GET','POST'])
 def get_details():
