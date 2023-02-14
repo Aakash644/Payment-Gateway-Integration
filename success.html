@@ -1,0 +1,103 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Payment status</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<script src="script.js"></script> 
+        <style> 
+        body{
+      background-image: url("{{url_for('static',filename='doonate7.webp')}}");
+     } 
+           * {
+	border: 0;
+	box-sizing: content-box;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	vertical-align: top;
+}
+.invoice { 
+    margin-top:5%; 
+    margin-left:35%;
+    margin-right:35%;
+    width:150x; 
+    border-radius: 10px;
+    height:430px;
+    border-color: black; 
+    padding:20px; 
+    background-color: #fff;
+} 
+.invoice h1{
+  font-size: 50px; 
+  font-weight: 600; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}  
+.article h2{
+    font-size: 30px; 
+  font-weight: 400; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img-1{  
+    border-color: black;
+    border-radius: 50%; 
+    
+    width:30px;
+    height:30px;
+}  
+hr { 
+    color: black;
+}
+ h3
+{  
+    line-height:20px;
+    font-size: 23px; 
+  font-weight: 400; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* content editable */
+     .blank { 
+         background-color: #537FE7;
+         width:300px; height:20px;
+         margin-left:10%; 
+         margin-right:10%; 
+         padding: 10px;
+     }  
+     
+        </style>
+	</head>
+	<body  > 
+       <div align="center" size="3" class="invoice">
+           <h1><b>Invoice</b></h1>
+           <div class="blank"></div> 
+           <div class="img1"><img src="/static/right.png" alt="" srcset=""></div> 
+
+           <div class="article">
+               <h2>
+                   <b>Payment Complete <br> Transaction id: 123456789</b>
+               </h2>   <br> 
+               <h2>
+                Amount Paid:Rs.{{ amount}}
+            </h2>
+
+               <hr size="3">
+               <h3>Thank you for completing the payment.</h3> 
+               <br>
+               <h3>You will recieve the email shortly.</h3> <br>
+
+           </div>  
+           <hr size="3" > 
+           <h3 >Thank you!</h3>
+   
+       </div>
+		
+	</body>
+</html>
